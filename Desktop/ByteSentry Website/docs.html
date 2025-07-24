@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>ByteSentry • Documentation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="ByteSentry Logo" />
+        <span>ByteSentry</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="https://discord.com/oauth2/authorize?client_id=1397966751278436525&amp;scope=bot%20applications.commands&amp;permissions=8" class="btn">Invite</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="max-width:960px;margin:2rem auto;">
+    <h1>Getting Started</h1>
+    <ol>
+      <li><strong>Clone the repo</strong><br />
+        <code>git clone https://github.com/your-username/ByteSentry.git</code>
+      </li>
+      <li><strong>Install dependencies</strong><br />
+        <code>npm install</code>
+      </li>
+      <li><strong>Create a <code>.env</code> file</strong> with:
+        <pre>
+BOT_TOKEN=your_bot_token
+CLIENT_ID=your_app_client_id
+OWNER_ID=your_discord_id
+        </pre>
+      </li>
+      <li><strong>Deploy slash commands</strong><br />
+        <code>node deploy-commands.js</code>
+      </li>
+      <li><strong>Run the bot</strong><br />
+        <code>node index.js</code>
+      </li>
+      <li><strong>Development mode</strong> (hot-reload)<br />
+        <code>NODE_ENV=development node index.js</code>
+      </li>
+      <li><strong>Dashboard</strong><br />
+        <code>node dashboard.js</code> (make sure <code>express</code> is installed)
+      </li>
+    </ol>
+
+    <h2>Configuration &amp; DB</h2>
+    <p>We use <code>quick.db</code> (SQLite). Your data file appears as <code>database.sqlite</code> in the root. Many commands let you configure channels or values per guild via slash commands.</p>
+
+    <h2>Contributing</h2>
+    <p>PRs are welcome! Check out <a href="https://github.com/your-repo/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for guidelines.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 ByteSentry. Built with ❤️ and Discord.js.</p>
+    <p><a href="https://github.com/your-repo">GitHub Repository</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

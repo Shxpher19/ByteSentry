@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>ByteSentry • Support</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="ByteSentry Logo" />
+        <span>ByteSentry</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="https://discord.com/oauth2/authorize?client_id=1397966751278436525&amp;scope=bot%20applications.commands&amp;permissions=8" class="btn">Invite</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="max-width:600px;margin:2rem auto;text-align:center;">
+    <h1>Need Help?</h1>
+    <p>Join our Discord server for support, feature requests, or just to say hi!</p>
+    <!-- Discord widget -->
+    <iframe src="https://discord.com/widget?id=1397968501070893117&amp;theme=light"
+            width="100%" height="300" allowtransparency="true" frameborder="0"></iframe>
+
+    <h2>Contact Us</h2>
+    <form action="mailto:support@bytesentry.dev" method="post" enctype="text/plain" style="margin-top:1rem;">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required style="width:100%;padding:8px;margin:4px 0;" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required style="width:100%;padding:8px;margin:4px 0;" /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required style="width:100%;padding:8px;margin:4px 0;"></textarea><br />
+
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+
+    <p style="margin-top:2rem;">Or reach us directly at <a href="mailto:support@bytesentry.dev">support@bytesentry.dev</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 ByteSentry. Built with ❤️ and Discord.js.</p>
+    <p><a href="https://github.com/your-repo">GitHub Repository</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

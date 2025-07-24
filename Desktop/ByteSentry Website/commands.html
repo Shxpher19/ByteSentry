@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>ByteSentry • Commands</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="ByteSentry Logo" />
+        <span>ByteSentry</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="features.html">Features</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="https://discord.com/oauth2/authorize?client_id=1397966751278436525&amp;scope=bot%20applications.commands&amp;permissions=8" class="btn">Invite</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="commands-table" style="max-width:960px;margin:2rem auto;">
+      <h1>Slash Command Reference</h1>
+      <table style="width:100%;border-collapse:collapse;">
+        <thead>
+          <tr style="background:#f5f5f5;">
+            <th style="text-align:left;padding:8px;">Command</th>
+            <th style="text-align:left;padding:8px;">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Utility -->
+          <tr><td>/help [command]</td><td>List all commands or show details</td></tr>
+          <tr><td>/settings view|set</td><td>View or update server settings</td></tr>
+          <tr><td>/prefix [value]</td><td>View or change command prefix</td></tr>
+          <tr><td>/timezone [zone]</td><td>View or set default timezone</td></tr>
+          <tr><td>/time [zone]</td><td>Show current time in a timezone</td></tr>
+          <tr><td>/invite</td><td>Get the bot’s invite link</td></tr>
+          <tr><td>/uptime</td><td>Show bot uptime and resource usage</td></tr>
+          <tr><td>/serverbanner</td><td>Display server banner</td></tr>
+          <tr><td>/servericon</td><td>Display server icon</td></tr>
+
+          <!-- Moderation -->
+          <tr><td>/slowmode &lt;sec&gt;</td><td>Set or clear channel slowmode</td></tr>
+          <tr><td>/tempban &lt;user&gt; &lt;mins&gt;</td><td>Ban a user temporarily</td></tr>
+          <tr><td>/mute &lt;user&gt; [mins]</td><td>Mute a member (text &amp; voice)</td></tr>
+          <tr><td>/unmute &lt;user&gt;</td><td>Unmute a member</td></tr>
+          <tr><td>/warn &lt;user&gt; &lt;reason&gt;</td><td>Warn a user with mod-log</td></tr>
+          <tr><td>/modlogs &lt;user&gt;</td><td>View all warnings for a user</td></tr>
+          <tr><td>/removemoderations &lt;user&gt;</td><td>Clear warnings &amp; unmute</td></tr>
+          <tr><td>/setnick &lt;user&gt; &lt;nick&gt;</td><td>Change a member’s nickname</td></tr>
+          <tr><td>/resetnick &lt;user&gt;</td><td>Reset a member’s nickname</td></tr>
+          <tr><td>/lockdown &lt;true|false&gt;</td><td>Lock or unlock all text channels</td></tr>
+          <tr><td>/modnote &lt;user&gt; &lt;note&gt;</td><td>Add an internal note to a user</td></tr>
+
+          <!-- Music -->
+          <tr><td>/play &lt;URL&gt;</td><td>Play or enqueue a song</td></tr>
+          <tr><td>/skip</td><td>Skip the current song</td></tr>
+          <tr><td>/stop</td><td>Stop playback and clear queue</td></tr>
+          <tr><td>/volume &lt;0–200&gt;</td><td>Adjust playback volume</td></tr>
+          <tr><td>/shuffle</td><td>Shuffle the music queue</td></tr>
+          <tr><td>/nowplaying</td><td>Show current track info</td></tr>
+          <tr><td>/search &lt;query&gt;</td><td>Search YouTube (top 5 results)</td></tr>
+          <tr><td>/lyrics</td><td>Get lyrics for the current song</td></tr>
+
+          <!-- Economy & Social -->
+          <tr><td>/transfer &lt;user&gt; &lt;amt&gt;</td><td>Send coins to another user</td></tr>
+          <tr><td>/inventory</td><td>View your items</td></tr>
+          <tr><td>/daily-streak</td><td>Claim your daily coins</td></tr>
+          <tr><td>/beg</td><td>Beg for random coins (30m cooldown)</td></tr>
+          <tr><td>/rob &lt;user&gt;</td><td>Attempt to rob another user (1h cooldown)</td></tr>
+          <tr><td>/leaderboard</td><td>Show top 10 richest users</td></tr>
+          <tr><td>/rank [user]</td><td>View XP &amp; level</td></tr>
+          <tr><td>/birthday set|view</td><td>Set or see your birthday</td></tr>
+
+          <!-- Games -->
+          <tr><td>/trivia</td><td>Answer a multiple-choice question</td></tr>
+          <tr><td>/hangman start|guess</td><td>Play hangman</td></tr>
+          <tr><td>/wordle start|guess</td><td>Play Wordle</td></tr>
+          <tr><td>/tictactoe start|move</td><td>Play Tic-Tac-Toe</td></tr>
+          <tr><td>/lvlup</td><td>Train to gain XP &amp; level</td></tr>
+
+          <!-- Analytics & Dev -->
+          <tr><td>/stats</td><td>Show top command usage</td></tr>
+          <tr><td>/autoprune set|run</td><td>Configure or run auto-prune</td></tr>
+          <tr><td>/eval</td><td>Evaluate JS (owner only)</td></tr>
+          <tr><td>/pingapi</td><td>Check WS &amp; DB latency</td></tr>
+          <tr><td>/backupdb</td><td>Backup the database file</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 ByteSentry. Built with ❤️ and Discord.js.</p>
+    <p><a href="https://github.com/your-repo">GitHub Repository</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
